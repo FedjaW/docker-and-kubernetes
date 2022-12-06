@@ -6,7 +6,7 @@
    docker build -t fedjaw/simpleweb .
    ```
 
-2. Run the new image:
+2. Run the new image as a container:
 
    ```CLI
    docker run -p 8080:8080 fedjaw/simpleweb

@@ -1,13 +1,15 @@
 # Commands
 
-1. Create an image out of the dockerfile with a tag:
+1. Run the images out of the docker-compose file:
 
    ```CLI
-   docker build -t fedjaw/visits .
+   docker-compose up
    ```
 
-2. Run the new image:
+2. To force a rebuild of the images that are used in the docker compose file:
 
    ```CLI
-   docker run -p 8081:8081 fedjaw/visits
+   docker-compose up --build
    ```
+
+3. Open the browser on localhost:8081

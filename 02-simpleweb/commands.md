@@ -11,3 +11,5 @@
    ```CLI
    docker run -p 8080:8080 fedjaw/simpleweb
    ```
+
+3. Open the browser on localhost:8080

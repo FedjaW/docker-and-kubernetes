@@ -6,7 +6,7 @@
    docker build -t fedjaw/redis:latest .
    ```
 
-2. Run the new image:
+2. Run the new image as a container:
 
    ```CLI
    docker run fedjaw/redis

@@ -25,3 +25,9 @@
    ```CLI
    docker-compose down
    ```
+
+5. To list the running container execute the following line in the directory in which your docker-compose file is located, then it will read the docker-compose file and list only the container belonging to that file:
+
+   ```CLI
+   docker-compose ps
+   ```

@@ -3,6 +3,6 @@ services:
   redis-server:
     image: 'redis'
   node-app:
-    build: .
+    build: . # will use the Dockerfile to build image
     ports:
       - "8081:8081"

@@ -5,6 +5,10 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 
-COPY . .
+# Since we are mounting all files into the container with the docker-compose file
+# we do not need the COPY statement, BUT it does no hurt and may be useful in the future
+# There might be the time when this dockerfile will be the only source to build the image.
+# So I keep the COPY command.
+COPY . . 
 
 CMD ["npm", "run", "start"]

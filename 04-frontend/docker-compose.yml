@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000" # port-outside-container:port-inside-container#
+    volumes:
+      - /app/node_modules # do not map node_modules to some folder outside the container
+      - .:/app # map current directory outside the container into the folder /app inside the container

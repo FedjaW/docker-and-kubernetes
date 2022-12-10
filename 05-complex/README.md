@@ -5,5 +5,3 @@
 ### Development
 
 ### Production
-
-Lecture 107 @ 4:52

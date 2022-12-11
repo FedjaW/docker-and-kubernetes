@@ -1,4 +1,4 @@
-# A way to complex solution for a fibonacci calculator
+# A too complex solution for a fibonacci calculator
 
 ## Commands
 

@@ -44,17 +44,17 @@ app.get("/", (req, res) => {
 
 app.get("/values/all", async (req, res) => {
   const values = await pgClient.query("SELECT * FROM values");
-  redis.send(values.rows);
+  res.send(values.rows);
 });
 
 app.get("/values/current", async (req, res) => {
   redisClient.hgetall("values", (err, values) => {
-    redis.send(values);
+    res.send(values);
   });
 });
 
 app.post("/values", async (req, res) => {
-  const index = req.body.value;
+  const index = req.body.index;
   if (parseInt(index) > 40) return res.status(422).send("index too high");
   redisClient.hset("values", index, "Nothing yet!");
   redisPublisher.publish("insert", index);

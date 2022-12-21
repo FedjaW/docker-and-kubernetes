@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         component: web
-    sepc:
+    spec:
       containers:
         - name: client
           image: stephengrider/multi-client
